@@ -1,0 +1,49 @@
+PROGRAM abs;
+
+VAR x: INTEGER;
+    result: INTEGER;
+
+BEGIN
+  (* Test 1: Tri tuyet doi cua so duong *)
+  x := 5;
+  result := if x < 0 return 0 - x else return x;
+  CALL WRITEC('x');
+  CALL WRITEC('=');
+  CALL WRITEI(x);
+  CALL WRITEC(' ');
+  CALL WRITEC('a');
+  CALL WRITEC('b');
+  CALL WRITEC('s');
+  CALL WRITEC('=');
+  CALL WRITEI(result);
+  CALL WRITELN;
+  
+  (* Test 2: Tri tuyet doi cua so am *)
+  x := 0 - 7;
+  result := if x < 0 return 0 - x else return x;
+  CALL WRITEC('x');
+  CALL WRITEC('=');
+  CALL WRITEI(x);
+  CALL WRITEC(' ');
+  CALL WRITEC('a');
+  CALL WRITEC('b');
+  CALL WRITEC('s');
+  CALL WRITEC('=');
+  CALL WRITEI(result);
+  CALL WRITELN;
+  
+  (* Test 3: Tri tuyet doi cua 0 *)
+  x := 0;
+  result := if x < 0 return 0 - x else return x;
+  CALL WRITEC('x');
+  CALL WRITEC('=');
+  CALL WRITEI(x);
+  CALL WRITEC(' ');
+  CALL WRITEC('a');
+  CALL WRITEC('b');
+  CALL WRITEC('s');
+  CALL WRITEC('=');
+  CALL WRITEI(result);
+  CALL WRITELN;
+  
+END.

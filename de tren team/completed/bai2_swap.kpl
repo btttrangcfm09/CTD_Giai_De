@@ -1,0 +1,25 @@
+PROGRAM SWAP;
+VAR X : INTEGER;
+    Y : INTEGER;
+
+BEGIN
+  X := 5;
+  Y := 3;
+  
+  (* Hoan doi gia tri: X, Y := Y, X *)
+  X, Y := Y, X;
+  
+  CALL WRITEC('X');
+  CALL WRITEC(' ');
+  CALL WRITEC('=');
+  CALL WRITEC(' ');
+  CALL WRITEI(X);
+  CALL WRITELN;
+  
+  CALL WRITEC('Y');
+  CALL WRITEC(' ');
+  CALL WRITEC('=');
+  CALL WRITEC(' ');
+  CALL WRITEI(Y);
+  CALL WRITELN;
+END.
