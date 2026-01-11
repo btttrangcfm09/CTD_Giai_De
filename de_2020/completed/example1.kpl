@@ -1,0 +1,9 @@
+Program Example1; (* Example 1 *)
+Var x : Integer;
+    y : Integer;
+Begin
+	x := 2;
+    y := 2**2;
+    Call WriteI(y);
+
+End. (* Example 1 *)
