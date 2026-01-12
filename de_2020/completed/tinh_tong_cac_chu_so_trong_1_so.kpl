@@ -1,0 +1,16 @@
+Program Program2; (* Sum of digits *)
+Var n : Integer;
+    sum : Integer;
+    d : Integer;
+Begin
+  sum := 0;
+  n := READI;
+  While n > 0 Do
+    Begin
+      d := n - (n / 10) * 10;
+      sum := sum + d;
+      n := n / 10;
+    End;
+  Call WRITEI(sum);
+  Call WRITELN;
+End.

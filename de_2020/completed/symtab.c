@@ -309,7 +309,6 @@ void initSymTab(void) {
   declareObject(readiFunction);
   readiFunction->funcAttrs->returnType = makeIntType();
 
-
   writeiProcedure = createProcedureObject("WRITEI");
   declareObject(writeiProcedure);
   enterBlock(writeiProcedure->procAttrs->scope);

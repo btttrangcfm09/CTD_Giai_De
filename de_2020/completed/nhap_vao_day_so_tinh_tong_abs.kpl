@@ -1,0 +1,32 @@
+(*Viết chương trình KPL nhập vào một dãy số, tính tổng các trị tuyệt đối của các số trong dãy. Yêu cầu: Viết hàm tính trị tuyệt đối, hàm tính tổng các trị tuyệt đối.*)
+Program AbsSum; (* Sum absolute values of a sequence *)
+   
+Var N : Integer;
+    I : Integer;
+    A : Array(. 100 .) of Integer;
+    SUM : Integer;
+
+Function Abs(x : Integer) : Integer;
+  Begin
+    If x >= 0 Then Abs := x Else Abs := 0 - x;
+  End;
+
+Function SumAbs(N : Integer) : Integer;
+  Var I : Integer;
+      S : Integer;
+  Begin
+    S := 0;
+    For I := 1 To N Do 
+      Begin
+        A(.I.) := READI;
+        S := S + Abs(A(.I.));
+      End;
+    SumAbs := S;
+  End;
+
+Begin
+  N := READI;
+  SUM := SumAbs(N);
+  Call WriteI(SUM);
+  Call WriteLn;
+End.
